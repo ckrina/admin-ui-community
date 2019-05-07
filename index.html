@@ -8,7 +8,7 @@
 
 		<link rel="stylesheet" href="css/reset.css">
 		<link rel="stylesheet" href="css/reveal.css">
-		<link rel="stylesheet" href="css/theme/black.css">
+		<link rel="stylesheet" href="css/theme/admin-ui.css">
 
 		<!-- Theme used for syntax highlighting of code -->
 		<link rel="stylesheet" href="lib/css/monokai.css">
@@ -23,10 +23,382 @@
 		</script>
 	</head>
 	<body>
-		<div class="reveal">
+		<div class="reveal admin-ui">
 			<div class="slides">
-				<section>Slide 1</section>
-				<section>Slide 2</section>
+				<section>
+					<h2>Mejoras en la interfaz de Drupal</h2>
+					<h4>Integración de procesos de diseño en una comunidad de software libre</h4>
+					<aside class="notes">
+					<p>Drupal cumplirá pronto 20 años y como comunidad de software libre ha pasado por varias etapas.
+					Pero desde sus orígenes hasta la actualidad ha estado formada principalmente por desarrolladores y su evolución ha estado influenciada por ello.
+					Además, el perfil de proyecto ha ido creciendo junto a las grandes empresas del sector, por lo que el abanico de soluciones ha cambiado con el paso de los años.</p>
+					<p>¿Pero cómo se innova en campos poco representados en la comunidad, como el diseño y la usabilidad?
+					¿Y quién toma decisiones estratégicas y cómo pueden influir estas en el futuro de la herramienta?
+					En esta ponencia se analizará cómo se han adaptado diferentes procesos de diseño y
+					creación a las dinámicas propias de una comunidad de software libre internacional y distribuida.
+					Cómo se han definido los objetivos a cumplir y qué dificultades conlleva gestionar y mantener en el tiempo la implicación de la comunidad.</p>
+					</aside>
+				</section>
+				<section>
+					<h2>Cristina Chumillas</h2>
+					<h4>Designer& Frontend developer</h4>
+					<ul>
+						<li>Drupal core UX mantainer</li>
+						<li>Co-coordinadora de la iniciativa Admin UI Modernization de Drupal</li>
+						<li>Co-organizadora de la Drupal.cat</li>
+						<li>Diseñadora&Frontend Lead en Ymbra</li>
+					</ul>
+				</section>
+				<section>
+					<ul>
+						<li>Drupal y su comunidad</li>
+						<li>Iniciativa Admin UI</li>
+						<li>Problemas en la Iniciativa</li>
+						<li>Éxitos en la Iniciativa</li>
+						<li>Futuro y conclusiones</li>
+					</ul>
+				</section>
+				<section>
+					<img src="assets/drupal.svg">
+				</section>
+				<section>
+					<blockquote>&ldquo;We're the leading open-source CMS for ambitious digital experiences&rdquo;</blockquote>
+				</section>
+				<section>
+					<h2>Código Abierto</h2>
+					<ul>
+						<li>Producto que incluye permiso para usar su código fuente, documentos de diseño o contenido</li>
+						<li>Open Source vs Free Software</li>
+					</ul>
+				</section>
+				<section>
+					<h2>Para qué sirve Drupal</h2>
+					<p>Producto para construir soluciones web de tamaño mediano a grande</p>
+				</section>
+				<section>
+					<h2>Historia</h2>
+					<p>En 2000 2 estudiantes en Antwerp, Dries Buytaert and Hans Snijder, crean un puente wireless entre dormitorios y se dan cuenta que les falta la funcionalidad de hablar entre ellos</p>
+				</section>
+				<section>
+					<h2>Historia</h2>
+					<p>En 2001 liberan el código para que otros puedan ayudar a mejorar la plataforma</p>
+				</section>
+				<section>
+					<h2>Historia</h2>
+					<h4>Drupal 6 y 7</h4>
+					<ul>
+						<li>Grandes años de crecimiento</li>
+						<li>Competidores: Wordpress y Joomla</li>
+					</ul>
+				</section>
+				<section>
+					<h2>Historia</h2>
+					<h4>Drupal 8 y 9</h4>
+					<ul>
+						<li>Reescritura de parte del código desde 0</li>
+						<li>Profesionalización: cambio de modelo</li>
+					</ul>
+				</section>
+				<section>
+					<section>
+						<h2>La comunidad Drupal</h2>
+					</section>
+					<section>
+						<h2>Actores</h2>
+						<img src="assets/dries.jpg" class="rounded">
+						<h4>Dries Buytaert</h4>
+						<p>BDFL - Benevolen Dictatorship For Life</p>
+					</section>
+					<section>
+						<h2>Actores</h2>
+						<br/><br/>
+						<img src="assets/drupal-association-logo-white.svg">
+					</section>
+					<section data-background="assets/empresas.png">
+
+					</section>
+					<section>
+						<h2>Actores</h2>
+						<p>Desarrolladores</p>
+						<img src="assets/community.jpg" width="500px">
+					</section>
+					<section>
+						<h2>Actores</h2>
+						<p>Asociaciones locales</p>
+						<img src="assets/aed.png" width="250px">
+					</section>
+					<section>
+						<h2>Perfiles de contribuidores</h2>
+						<ul>
+							<li>Desarrollador backend</li>
+							<li>Desarrollador frontend</li>
+							<li>Organizador de eventos</li>
+							<li>Voluntario UX</li>
+							<li>Documentación</li>
+						</ul>
+					</section>
+					<section>
+						<h2>Drupal Core vs módulos contribuidos</h2>
+					</section>
+					<section>
+						<h4>Drupal core</h4>
+						<ul>
+							<li>Se busca la calidad</li>
+							<li>Proceso lento</li>
+							<li>Permisos para commitear limitados</li>
+							<li>Resolver problema para el 80% de los casos</li>
+							<li>Las contribuciones aportan más mérito</li>
+						</ul>
+					</section>
+					<section>
+						<img src="assets/drupalcores.png">
+					</section>
+					<section>
+						<h3>Módulos contribuidos</h3>
+						<p>Todo usuario registrado puede crear</p>
+					</section>
+					<section>
+						<h3>Módulos contribuidos</h3>
+						<p>Calidad no verificada</p>
+						<img src="assets/contrib.png" width="450px">
+					</section>
+					<section>
+						<h3>Módulos contribuidos</h3>
+						<p>Algunos módulos muy usados acaban entrando en core</p>
+					</section>
+					<section>
+						<h3>Posiciones y roles importantes en la comunidad</h3>
+						<ul>
+							<li>BDFL - Dries</li>
+							<li>Product Manager</li>
+							<li>Core Commiters</li>
+							<li>Core Mantainers</li>
+							<li>Iniciativas oficiales</li>
+						</ul>
+					</section>
+					<section>
+						<h3>Meritocracia</h3>
+						<blockquote cite="https://es.wikipedia.org/wiki/Meritocracia">
+							&ldquo;La meritocracia es una forma de gobierno basada en el mérito,
+							y en términos más generales, se refiere a la discriminación positiva por méritos.&rdquo;
+						</blockquote>
+					</section>
+					<section>
+						<h3>Meritocracia</h3>
+						<p>Tener tiempo libre para contribuir es un privilegio.</p>
+						<a href="https://dri.es/the-privilege-of-free-time-in-open-source">The privilege of free time in Open Source - Dries</a>
+					</section>
+					<section>
+						<img src="assets/drupalcores.png">
+					</section>
+				</section>
+				<section>
+					<h2>Evolución Drupal como producto</h2>
+					<img src="assets/decoupled-drupal.jpg">
+				</section>
+				<section>
+					<h2>Carencias de Drupal</h2>
+					<ul>
+						<li>Falta de desarrolladores con experiencia</li>
+						<li>Falta de aprecio en la comunidad de desarrollo</li>
+						<li>Usabilidad deficiente</li>
+					<ul>
+				</section>
+				<section>
+					<img src="assets/paragraphs.png">
+				</section>
+				<section>
+					<section>
+						<h3>Iniciativa oficial para la Modernización de la Interfaz de Usuario de la Administración de Drupal</h3>
+					</section>
+					<section>
+						<h1>Admin UI</h1>
+					</section>
+					<section>
+						<h2>Porqué aparece</h2>
+						<ul>
+							<li>Tipo de producto más complejo</li>
+							<li>Edición de contenidos no preparada</li>
+							<li>Mejoras en usabilidad escasas</li>
+							<li>Diseño obsoleto (más de 8-9 años)</li>
+						</ul>
+					</section>
+					<section>
+						<h2>Objetivos</h2>
+						<ul>
+							<li>Crear una nueva interfaz de administración moderna, flexible y usable.</li>
+							<li>Sacar novedades pequeñas rápido, grandes cambios progresivamente.</li>
+						</ul>
+					</section>
+					<section>
+						<h2>Partes de la iniciativa</h2>
+					</section>
+					<section data-background="assets/iniciativa-overview.png">
+					</section>
+					<section>
+						<h2>Distribución trabajo</h2>
+					</section>
+					<section data-background="assets/workflow.png">
+					</section>
+					<section>
+						<h2>Perfiles envueltos</h2>
+						<ul>
+							<li>React app</li>
+							<li>Claro theme</li>
+							<li>UX & User tests</li>
+							<li>Design team</li>
+						</ul>
+					</section>
+					<section id="fragments">
+						<h2>Qué saca la gente de contribuir?</h2>
+						<ul>
+							<li class="fragment">Devolver a la comunidad</li>
+							<li class="fragment">Aprender</li>
+							<li class="fragment">Contactos</li>
+							<li class="fragment">Reconocimiento</li>
+						</ul>
+					</section>
+				</section>
+				<section>
+					<section>
+						<h1>Problemas de la Iniciativa</h1>
+					</section>
+					<section>
+						<p>Drupal es una mole muy grande a cambiar.</p>
+					</section>
+					<section>
+						<p>Políticas y burocracia interna muy lentas.</p>
+						<p class="fragment">Sentir que no se tiene capacidad de decidir.</p>
+					</section>
+					<section >
+						<p>Presión por el hecho de ser iniciativa clave.</p>
+						<p class="fragment">Las fechas lanzamiento Drupal 9 condicionan las features y el timming.</p>
+					</section>
+					<section>
+						<p>El trabajo lo hace un equipo de voluntarios</p>
+					</section>
+					<section>
+						<ul>
+							<li>Muchas personas, poco tiempo cada una</li>
+							<li class="fragment">Desaparecen periodos de tiempo indefinidos</li>
+							<ul>
+								<li class="fragment">Trabajo sin hacer</li>
+								<li class="fragment">Se pierde el hilo</li>
+							</ul>
+							<li class="fragment">Inmersión compleja por volúmen de información</li>
+							<li class="fragment">Burnout</li>
+						</ul>
+					</section>
+					<section>
+						<p>¿Qué saca la gente de trabajar en esto?</p>
+						<p class="fragment">Las recompensas son a largo plazo.</p>
+						<p class="fragment"><strong>¿Meritocracia?</strong></p>
+					</section>
+					<section>
+						<h3>Zonas horarias</h3>
+						<p>Gente de todo el mundo</p>
+						<p>Asia, EUA, EU</p>
+					</section>
+					<section>
+						<p>Opinadores profesionales.</p>
+					</section>
+					<section data-background="assets/trump.gif">
+					</section>
+					<section>
+						<p>Falta de diseñadores:</p>
+						<p>el diseño está bloqueando la implementación.</p>
+					</section>
+					<section>
+						<p>Think big changes...</p>
+						<p class="fragment">...¿y si no se pueden implementar?</p>
+					</section>
+					<section>
+						<p>Open source en un entorno/sector profesionalizado:</p>
+						<p>priman los beneficios, se contrybuye menos.</p>
+					</section>
+				</section>
+				<section>
+					<section>
+						<h2>Soluciones que se han tomado</h2>
+					</section>
+					<section>
+						<h3>Toma de decisiones</h3>
+						<p>Ejemplo nombre <strong>Claro</strong></p>
+					</section>
+					<section>
+						<p>2 líneas de desarrollo</p>
+					</section>
+					<section data-background="assets/workflow2.png">
+					</section>
+					<section>
+						<p>Herramientas online Google docs/Figma</p>
+					</section>
+					<section data-background="assets/figma.gif">
+					</section>
+					<section>
+						<h3>Reuniones escritas</h3>
+						<ul>
+							<li>Accesibilidad</li>
+							<li>Participación asíncrona</li>
+							<li>Mejora transparencia y comunicación</li>
+						</ul>
+					</section>
+					<section>
+						<p>Call for volunteers a nivel de diseño.</p>
+					</section>
+					<section>
+						<p>Comunicación más fluida con publicaciones periódicas</p>
+					</section>
+				</section>
+				<section>
+					<section>
+						<h2>Futuro</h2>
+					</section>
+					<section>
+						<h3>¿Qué significaría fallar?</h3>
+						<ul>
+							<li>Competencia nos adelanta</li>
+							<li>Decrecimiento en la demanda</li>
+							<li>Desinterés por parte de la comunidad</li>
+						</ul>
+					</section>
+					<section>
+						<h3>¿Qué significa que la iniciativa salga adelante?</h3>
+						<ul>
+							<li>Nos subimos al carro de los adelantos</li>
+							<li>Cambio percepción del producto</li>
+							<li>Continuar siendo relevantes</li>
+						</ul>
+					</section>
+					<section>
+						<h3>¿Qué significaría ser todo un éxito?</h3>
+						<ul>
+							<li>Marcar un hito en diseño UI complejas</li>
+							<li>Posicionarnor por delante de la competencia en su sector</li>
+							<li>Conseguir interés de otras comunidades: diseño, arquitectura información, UX...</li>
+						</ul>
+					</section>
+					<section>
+						<h3>Integración y coordinación con otras iniciativas</h3>
+						<p>Necesario para:
+						<ul>
+							<li>No generar rechazo en comunidad</li>
+							<li>Conseguir más voluntarios</li>
+							<li>Conseguir más organizadores</li>
+						</ul>
+					</section>
+				</section>
+
+				<section>
+					<h2>Conclusiones</h2>
+					<ul>
+						<li class="fragment">Éxito dependerá de planificar funcionalidades clave</li>
+						<li class="fragment">y de que haya gente que lo haga una realidad.</li>
+					</ul>
+				</section>
+				<section>
+					<h2>¡Gracias!</h2>
+				</section>
 			</div>
 		</div>
 

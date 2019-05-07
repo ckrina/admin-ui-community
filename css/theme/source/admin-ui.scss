@@ -1,0 +1,85 @@
+/**
+ * White theme for reveal.js. This is the opposite of the 'black' theme.
+ *
+ * By Hakim El Hattab, http://hakim.se
+ */
+
+
+// Default mixins and settings -----------------
+@import "../template/mixins";
+@import "../template/settings";
+// ---------------------------------------------
+
+
+// Include theme-specific fonts
+@import url(../../lib/font/source-sans-pro/source-sans-pro.css);
+
+
+// Override theme settings (see ../template/settings.scss)
+$backgroundColor: #1248d9;
+
+$mainColor: #fff;
+$headingColor: #fff;
+
+$mainFontSize: 42px;
+$mainFont: 'Source Sans Pro', Helvetica, sans-serif;
+$headingFont: 'Source Sans Pro', Helvetica, sans-serif;
+$headingTextShadow: none;
+$headingLetterSpacing: normal;
+$headingTextTransform: uppercase;
+$headingFontWeight: 800;
+$linkColor: #b5d0f8;
+$linkColorHover: lighten( $linkColor, 15% );
+$selectionBackgroundColor: lighten( $linkColor, 25% );
+
+$heading1Size: 2.5em;
+$heading2Size: 1.6em;
+$heading3Size: 1.3em;
+$heading4Size: 1.0em;
+
+section.has-dark-background {
+	&, h1, h2, h3, h4, h5, h6 {
+		color: #fff;
+	}
+}
+
+
+
+// Theme template ------------------------------
+@import "../template/theme";
+// ---------------------------------------------
+
+.reveal.admin-ui {
+  blockquote {
+    position: relative;
+    padding: 50px 0;
+    border-bottom: solid 4px #fff;
+    background: transparent;
+    box-shadow: 0 0 0;
+    font-size: 3rem;
+
+    &:before {
+      content: "“";
+      color: #fff;
+      font-size: 20rem;
+      position: absolute;
+      top: -100px;
+      left: -100px;
+      opacity: 0.2;
+    }
+  }
+
+  section img {
+    margin: 0;
+    background: transparent;
+    border: 0;
+    box-shadow: 0 0 0;
+
+    &.rounded {
+      width: 300px;
+      height: 300px;
+      border-radius: 50%;
+      overflow: hidden;
+    }
+  }
+}
